@@ -1,0 +1,35 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+    /*
+      id = prompt('아이디를 입력해주세요')
+      if(id=='egoing'){
+        alert('아이디가 일치합니다.')
+      }
+      else{
+        alert('아이디가 일치하지 않습니다.')
+      }
+      */
+
+      while(false){
+        document.write('coding everybody <br/>');
+      }
+
+      for(var j=0; j<5; j++){
+        document.write("["+j+"]: this message is printed.<br/>");
+      }
+
+      var list = ['1', '2' ,'3', '4' ,'5'];
+      list = list.concat(['6', '7']);
+      //list.concat()만 단독으로 사용시 수행되지 않았음
+
+      list.unshift('a'); //맨 앞에 추가
+      list.shift('a'); //맨 앞에 삭제
+      list.pop(); //맨 뒤에 삭제
+      list.splice(1, 0, 'b'); //2번째 자리(1번째 뒤)에 0개를 없애고 'b' 추가
+      alert(list);
+    </script>
+  </body>
+</html>
